@@ -1,11 +1,8 @@
 -- Gui to Lua
 -- Version: 3.2
 
-
-
-
 -- Instances:
-local player = game.Players.LocalPlayer
+
 local Apexe = Instance.new("ScreenGui")
 local Background = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
@@ -14,7 +11,7 @@ local SwagMode = Instance.new("TextButton")
 local Credz = Instance.new("TextLabel")
 local SilentDaH = Instance.new("TextButton")
 local FMacro = Instance.new("TextButton")
-local GoodAim = Instance.new("TextButton")
+local ArticGui = Instance.new("TextButton")
 local Title2 = Instance.new("TextLabel")
 local Prem = Instance.new("TextLabel")
 
@@ -27,13 +24,14 @@ Apexe.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Background.Name = "Background"
 Background.Parent = Apexe
 Background.BackgroundColor3 = Color3.fromRGB(80, 109, 111)
-Background.Position = UDim2.new(0.0498575494, 0, 0.0386533663, 0)
-Background.Size = UDim2.new(0, 1207, 0, 739)
+Background.Position = UDim2.new(-3.55429947e-05, 0, 0.673908412, 0)
+Background.Size = UDim2.new(0, 251, 0, 294)
 
 Title.Name = "Title"
 Title.Parent = Background
 Title.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
-Title.Size = UDim2.new(0, 1207, 0, 50)
+Title.Position = UDim2.new(0, 0, 0.00293882191, 0)
+Title.Size = UDim2.new(0, 249, 0, 18)
 Title.Font = Enum.Font.SourceSans
 Title.Text = "Apexe"
 Title.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -44,15 +42,15 @@ Title.TextWrapped = true
 Lgo.Name = "Lgo"
 Lgo.Parent = Background
 Lgo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Lgo.Position = UDim2.new(0.545981765, 0, 0, 0)
-Lgo.Size = UDim2.new(0, 52, 0, 50)
+Lgo.Position = UDim2.new(0.571106911, 0, 0.00293882191, 0)
+Lgo.Size = UDim2.new(0, 15, 0, 18)
 Lgo.Image = "http://www.roblox.com/asset/?id=10106441494"
 
 SwagMode.Name = "SwagMode"
 SwagMode.Parent = Background
 SwagMode.BackgroundColor3 = Color3.fromRGB(78, 144, 94)
-SwagMode.Position = UDim2.new(0.11516156, 0, 0.143437088, 0)
-SwagMode.Size = UDim2.new(0, 205, 0, 76)
+SwagMode.Position = UDim2.new(0.0102283629, 0, 0.1459907, 0)
+SwagMode.Size = UDim2.new(0, 62, 0, 28)
 SwagMode.Font = Enum.Font.SourceSans
 SwagMode.Text = "Swagmode (Da Hood Games)"
 SwagMode.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -66,8 +64,8 @@ end)
 Credz.Name = "Credz"
 Credz.Parent = Background
 Credz.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
-Credz.Position = UDim2.new(0, 0, 0.0676589981, 0)
-Credz.Size = UDim2.new(0, 1207, 0, 35)
+Credz.Position = UDim2.new(0, 0, 0.0704163015, 0)
+Credz.Size = UDim2.new(0, 249, 0, 12)
 Credz.Font = Enum.Font.SourceSans
 Credz.Text = "Credits : MoneyMakingBagChasin"
 Credz.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -78,8 +76,8 @@ Credz.TextWrapped = true
 SilentDaH.Name = "SilentDaH"
 SilentDaH.Parent = Background
 SilentDaH.BackgroundColor3 = Color3.fromRGB(165, 70, 70)
-SilentDaH.Position = UDim2.new(0.310687661, 0, 0.143437088, 0)
-SilentDaH.Size = UDim2.new(0, 200, 0, 76)
+SilentDaH.Position = UDim2.new(0.264084339, 0, 0.1459907, 0)
+SilentDaH.Size = UDim2.new(0, 56, 0, 28)
 SilentDaH.Font = Enum.Font.SourceSans
 SilentDaH.Text = "Silent Da Hood Lock"
 SilentDaH.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -93,8 +91,8 @@ end)
 FMacro.Name = "FMacro"
 FMacro.Parent = Background
 FMacro.BackgroundColor3 = Color3.fromRGB(78, 144, 94)
-FMacro.Position = UDim2.new(0.497928739, 0, 0.143437088, 0)
-FMacro.Size = UDim2.new(0, 205, 0, 76)
+FMacro.Position = UDim2.new(0.494819283, 0, 0.1459907, 0)
+FMacro.Size = UDim2.new(0, 62, 0, 28)
 FMacro.Font = Enum.Font.SourceSans
 FMacro.Text = "Fake Macro"
 FMacro.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -105,27 +103,26 @@ FMacro.MouseButton1Click:Connect(function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/QW5Whap9"))()
 end)
 
-
-GoodAim.Name = "GoodAim"
-GoodAim.Parent = Background
-GoodAim.BackgroundColor3 = Color3.fromRGB(165, 70, 70)
-GoodAim.Position = UDim2.new(0.695940375, 0, 0.143437088, 0)
-GoodAim.Size = UDim2.new(0, 200, 0, 76)
-GoodAim.Font = Enum.Font.SourceSans
-GoodAim.Text = "Da Hood (Good AimLock)"
-GoodAim.TextColor3 = Color3.fromRGB(0, 0, 0)
-GoodAim.TextScaled = true
-GoodAim.TextSize = 14.000
-GoodAim.TextWrapped = true
-GoodAim.MouseButton1Click:Connect(function()
+ArticGui.Name = "ArticGui"
+ArticGui.Parent = Background
+ArticGui.BackgroundColor3 = Color3.fromRGB(165, 70, 70)
+ArticGui.Position = UDim2.new(0.744942009, 0, 0.1459907, 0)
+ArticGui.Size = UDim2.new(0, 62, 0, 28)
+ArticGui.Font = Enum.Font.SourceSans
+ArticGui.Text = "Da Hood ArticGui"
+ArticGui.TextColor3 = Color3.fromRGB(0, 0, 0)
+ArticGui.TextScaled = true
+ArticGui.TextSize = 14.000
+ArticGui.TextWrapped = true
+ArticGui.MouseButton1Click:Connect(function()
 	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/PolarWasHere/Arctic/main/Arctic"))()
 end)
 
 Title2.Name = "Title2"
 Title2.Parent = Background
 Title2.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
-Title2.Position = UDim2.new(0, 0, 0.269282818, 0)
-Title2.Size = UDim2.new(0, 1207, 0, 47)
+Title2.Position = UDim2.new(0, 0, 0.27149871, 0)
+Title2.Size = UDim2.new(0, 249, 0, 17)
 Title2.Font = Enum.Font.SourceSans
 Title2.Text = "Da Hood Scripts"
 Title2.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -136,8 +133,8 @@ Title2.TextWrapped = true
 Prem.Name = "Prem"
 Prem.Parent = Background
 Prem.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
-Prem.Position = UDim2.new(0, 0, 0.332882285, 0)
-Prem.Size = UDim2.new(0, 1207, 0, 493)
+Prem.Position = UDim2.new(0, 0, 0.33492732, 0)
+Prem.Size = UDim2.new(0, 249, 0, 194)
 Prem.Font = Enum.Font.SourceSans
 Prem.Text = "Buy Premium To Unlock This Section"
 Prem.TextColor3 = Color3.fromRGB(0, 0, 0)
